@@ -1,0 +1,16 @@
+{
+  "name": "wexin_jsapi_demo",
+  "version": "1.0.0",
+  "description": "wexin jsapi demo",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Wang Qiu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.11.0",
+    "jade": "^1.9.1",
+    "request": "^2.51.0",
+    "rndm": "^1.1.0",
+    "sha1": "^1.1.0"
+  }
+}

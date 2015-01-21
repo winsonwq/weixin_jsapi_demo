@@ -1,0 +1,13 @@
+doctype html
+head
+  script(name="baidu-tc-cerfication",data-appid="5308735",src="http://apps.bdimg.com/cloudaapi/lightapp.js")
+
+meta(name="appId",content="#{appInfo.appId}")
+meta(name="timestamp",content="#{appInfo.timestamp}")
+meta(name="nonceStr",content="#{appInfo.nonceStr}")
+meta(name="signature",content="#{appInfo.signature}")
+
+p= appInfo.signature
+script(src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js")
+script(src="scripts/wx_config.js")
+script(src="scripts/index.js")
