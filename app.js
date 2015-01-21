@@ -31,13 +31,12 @@ app.post('/entry', function(res, resp, next) {
 
 app.get('/', function(res, resp) {
   var ticket = app.get('jsApiTicket');
-  // amazing '/'
-  resp.render('index', { desc: ticket, appInfo: appInfo(config.appId, config.appsecret, ticket, 'http://' + res.headers.host + '/') });
+  resp.render('index', { desc: ticket, appInfo: appInfo(config.appId, config.appsecret, ticket, 'http://' + res.headers.host + res.url) });
 });
 
 // TODO: refresh js api ticket
 prepareBeforeStartServer(function () {
-  app.listen(80);
+  app.listen(3000);
 });
 
 function prepareBeforeStartServer(cb) {
