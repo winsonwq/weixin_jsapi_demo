@@ -17,7 +17,7 @@ app.get('/entry', function(res, resp, next) {
   var sha1Encoded = sha1([token, query.nonce, query.timestamp].sort().join(''));
 
   if (query.signature == sha1Encoded) {
-    resp.status(200).end(query.echostr);
+    resp.end(query.echostr);
   } else {
     resp.end();
   }
